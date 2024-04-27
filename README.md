@@ -24,3 +24,11 @@ scoreboard players get @s mrlib.movement.fly_time
 ```
 * These scores all work just like the sneak_time built in score except they reset when you stop moving.
 * There is an additional has_motion score which just tracks if you are moving at all and how long, it also resets upon idle
+
+### Entity Motion
+```mcfunction
+scoreboard players set $launch_strength mrlib.var 1000
+function mrlib:entity/launch
+```
+* $launch_strength of 1000 launches the entity roughly ~3 blocks or so
+* Does not work on players
