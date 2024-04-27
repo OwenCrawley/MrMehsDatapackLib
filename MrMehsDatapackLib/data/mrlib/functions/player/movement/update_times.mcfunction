@@ -1,0 +1,3 @@
+function mrlib:player/movement/update_sprint_time
+function mrlib:player/movement/update_walk_time
+function mrlib:player/movement/update_fly_time

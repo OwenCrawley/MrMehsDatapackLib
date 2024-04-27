@@ -1,0 +1,1 @@
+execute if block ~-.29 ~ ~-.29 #mrlib:raycast_pass if block ~-.29 ~1.9 ~-.29 #mrlib:raycast_pass if block ~.29 ~ ~.29 #mrlib:raycast_pass if block ~.29 ~1.9 ~.29 #mrlib:raycast_pass run return 1
