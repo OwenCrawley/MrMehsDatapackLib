@@ -18,8 +18,9 @@ function mrlib:player/inventory/modify_mainhand
 
 ### Movement Tracking Scores
 ```mcfunction
+scoreboard players get @s mrlib.movement.walk_time
 scoreboard players get @s mrlib.movement.sprint_time
+scoreboard players get @s mrlib.movement.fly_time
 ```
-* There is a sprint_time, walk_time, and fly_time
-* They all work just like the sneak_time built in score except they reset when you stop moving.
+* These scores all work just like the sneak_time built in score except they reset when you stop moving.
 * There is an additional has_motion score which just tracks if you are moving at all and how long, it also resets upon idle
