@@ -32,3 +32,6 @@ function mrlib:entity/launch
 ```
 * $launch_strength of 1000 launches the entity roughly ~3 blocks or so
 * Does not work on players
+
+# NOTES
+Remember that this is a work in progress so their may be bugs!
