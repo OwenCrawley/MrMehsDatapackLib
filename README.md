@@ -35,3 +35,4 @@ function mrlib:entity/launch
 
 # NOTES
 Remember that this is a work in progress so their may be bugs!
+It is also being worked on by a programming amateur so it may not be written in the most optimized and efficient way.
