@@ -1,4 +1,4 @@
-# Mr Meh's Datapack Library
+# Mr. Meh's Datapack Library
 Mr Meh's Datapack Library is a library made to assist with Datapack creation
 
 ## Some features:
