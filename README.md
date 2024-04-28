@@ -1,7 +1,7 @@
 # Mr. Meh's Datapack Library
 Mr Meh's Datapack Library is a library made to assist with Datapack creation
 
-## Some features:
+## Features:
 ### Swapping Item with Offhand Function
 ```mcfunction
 function mrlib:player/inventory/swap_hands
