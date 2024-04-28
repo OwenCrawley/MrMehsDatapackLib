@@ -27,10 +27,17 @@ scoreboard players get @s mrlib.movement.fly_time
 
 ### Entity Motion
 ```mcfunction
-scoreboard players set $launch_strength mrlib.var 1000
-function mrlib:entity/launch
+scoreboard players set $strength mrlib.motion 1000
+function mrlib:entity/launch/looking
 ```
-* $launch_strength of 1000 launches the entity roughly ~3 blocks or so
+or if you want to control individual xyz motion:
+```mcfunction
+scoreboard players set $x_strength mrlib.motion 1000
+scoreboard players set $y_strength mrlib.motion 1000
+scoreboard players set $z_strength mrlib.motion 1000
+function mrlib:entity/launch/xyz
+```
+* strength of 1000 launches the entity roughly ~3 blocks or so
 * Does not work on players
 
 # NOTES

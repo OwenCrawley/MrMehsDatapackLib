@@ -5,6 +5,8 @@ scoreboard objectives add mrlib.var dummy
 
 scoreboard objectives add mrlib.gamemode dummy
 
+scoreboard objectives add mrlib.motion dummy
+
 ##      --movement--
 scoreboard objectives add mrlib.movement.has_motion dummy
 #-sprint

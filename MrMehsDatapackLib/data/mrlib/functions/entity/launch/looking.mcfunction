@@ -14,6 +14,6 @@ scoreboard players operation $motion_x2 mrlib.var -= $motion_x1 mrlib.var
 scoreboard players operation $motion_y2 mrlib.var -= $motion_y1 mrlib.var
 scoreboard players operation $motion_z2 mrlib.var -= $motion_z1 mrlib.var
 
-execute store result entity @s Motion[0] double 0.00001 run scoreboard players operation $motion_x2 mrlib.var *= $launch_strength mrlib.var
-execute store result entity @s Motion[1] double 0.00001 run scoreboard players operation $motion_y2 mrlib.var *= $launch_strength mrlib.var
-execute store result entity @s Motion[2] double 0.00001 run scoreboard players operation $motion_z2 mrlib.var *= $launch_strength mrlib.var
+execute store result entity @s Motion[0] double 0.00001 run scoreboard players operation $motion_x2 mrlib.var *= $strength mrlib.motion
+execute store result entity @s Motion[1] double 0.00001 run scoreboard players operation $motion_y2 mrlib.var *= $strength mrlib.motion
+execute store result entity @s Motion[2] double 0.00001 run scoreboard players operation $motion_z2 mrlib.var *= $strength mrlib.motion
