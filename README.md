@@ -39,6 +39,19 @@ function mrlib:entity/launch/xyz
 ```
 * strength of 1000 launches the entity roughly ~3 blocks or so
 * Does not work on players
+### Macro Damage (damage from scoreboard)
+```mcfunction
+function mrlib:entity/damage {"damage":10,"damageType":"generic"}
+```
+or for scoreboard/data usage:
+```mcfunction
+scoreboard players set $mrlib.damage mrlib.var 100
+execute store result storage mrlib:storage damage.damage int 0.1 run scoreboard players get $mrlib.damage mrlib.var
+data merge storage mrlib:storage {damage:{damageType:"generic"}}
+function mrlib:entity/damage with storage mrlib:storage damage
+```
+* You can use any score and any storage
+* If you choose to use your own storage it must be structured as such `{PATH:{damage:20,damageType:"generic"}}`
 
 # NOTES
 Remember that this is a work in progress so their may be bugs!
