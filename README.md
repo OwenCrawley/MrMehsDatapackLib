@@ -51,7 +51,7 @@ data merge storage mrlib:storage {damage:{damageType:"generic"}}
 function mrlib:entity/damage with storage mrlib:storage damage
 ```
 * You can use any score and any storage
-* If you choose to use your own storage it must be structured as such `{PATH:{damage:20,damageType:"generic"}}`
+* If you choose to use your own storage it must be structured as such `{PATH:{damage:DAMAGE_AMOUNT,damageType:"DAMAGE_TYPE"}}`
 
 # NOTES
 Remember that this is a work in progress so their may be bugs!
