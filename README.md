@@ -18,12 +18,14 @@ function mrlib:player/inventory/modify_mainhand
 
 ### Movement Tracking Scores
 ```mcfunction
+execute as @a run function mrlib:player/movement/update_times
 scoreboard players get @s mrlib.movement.walk_time
 scoreboard players get @s mrlib.movement.sprint_time
 scoreboard players get @s mrlib.movement.fly_time
 ```
 * These scores all work just like the sneak_time built in score except they reset when you stop moving.
 * There is an additional has_motion score which just tracks if you are moving at all and how long, it also resets upon idle
+* In order to use the has_motion score you must also run the `function mrlib:player/movement/update_has_motion` function
 
 ### Entity Motion
 ```mcfunction
@@ -53,6 +55,15 @@ function mrlib:entity/damage with storage mrlib:storage damage
 * You can use any score and any storage
 * If you choose to use your own storage it must be structured as such `{PATH:{damage:DAMAGE_AMOUNT,damageType:"DAMAGE_TYPE"}}`
 
+### Non Solid Block Tag and Function
+```mcfunction
+execute if block ~ ~ ~ #mrlib:non_solid
+```
+```mcfunction
+execute if function mrlib:player/in_non_solid
+```
+* The block tag includes all blocks that the player can walk through
+* The function checks if there are any solids in the players hitbox if there is it returns a fail
 # NOTES
 Remember that this is a work in progress so their may be bugs!
 It is also being worked on by a programming amateur so it may not be written in the most optimized and efficient way.

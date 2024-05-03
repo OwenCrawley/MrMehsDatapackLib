@@ -16,8 +16,8 @@ execute unless score @s mrlib.movement.fly_time matches 0 run tag @s add mrlib.h
 
 scoreboard players reset $motiontemp mrlib.var
 
-execute as @s[tag=!mrlib.has_motion,tag=mrlib.phase_ready] positioned ^ ^.1 ^.1 unless function mrlib:player/in_passblock run function mrlib:player/movement/phase/start
-execute as @s[tag=mrlib.phasing] at @s if function mrlib:player/in_passblock run function mrlib:player/movement/phase/end
+execute as @s[tag=!mrlib.has_motion,tag=mrlib.phase_ready] at @s positioned ^ ^.1 ^.1 unless function mrlib:player/in_non_solid run function mrlib:player/movement/phase/start
+execute as @s[tag=mrlib.phasing] at @s if function mrlib:player/in_non_solid run function mrlib:player/movement/phase/end
 
 scoreboard players reset @s[tag=!mrlib.has_motion] mrlib.movement.has_motion
 scoreboard players add @s[tag=mrlib.has_motion] mrlib.movement.has_motion 1

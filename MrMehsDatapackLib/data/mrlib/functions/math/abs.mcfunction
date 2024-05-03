@@ -1,0 +1,1 @@
+execute if score $mrlib.math.in mrlib.var matches ..0 run scoreboard players operation $mrlib.math.in mrlib.var *= -1 mrlib.const

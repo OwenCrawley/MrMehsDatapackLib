@@ -24,3 +24,6 @@ scoreboard objectives add mrlib.movement.fly_track minecraft.custom:minecraft.fl
 scoreboard objectives add mrlib.movement.fly_time dummy
 scoreboard objectives add mrlib.movement.old_fly_time dummy
 scoreboard objectives add mrlib.movement.fly_uptime dummy
+
+#constants
+scoreboard players set -1 mrlib.const -1
