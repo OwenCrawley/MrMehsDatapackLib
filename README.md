@@ -6,6 +6,7 @@ Mr Meh's Datapack Library is a library made to assist with Datapack creation
 ```mcfunction
 function mrlib:player/inventory/swap_hands
 ```
+* This essentially emulates the "Swap Item with Offhand" keybind but is not dependent on what your keybind is set to
 
 ### Modifying a Held Item without giving the player a new item
 ```mcfunction
@@ -43,7 +44,7 @@ function mrlib:entity/launch/xyz
 * Does not work on players
 ### Macro Damage (damage from scoreboard)
 ```mcfunction
-function mrlib:entity/damage {"damage":10,"damageType":"generic"}
+function mrlib:entity/damage {"damage":DAMAGE_AMOUNT,damageType:"DAMAGE_TYPE"}
 ```
 or for scoreboard/data usage:
 ```mcfunction
@@ -53,7 +54,7 @@ data merge storage mrlib:storage {damage:{damageType:"generic"}}
 function mrlib:entity/damage with storage mrlib:storage damage
 ```
 * You can use any score and any storage
-* If you choose to use your own storage it must be structured as such `{PATH:{damage:DAMAGE_AMOUNT,damageType:"DAMAGE_TYPE"}}`
+* If you choose to use your own storage it must be structured as such `{PATH:{damage:20,damageType:"generic"}}`
 
 ### Non Solid Block Tag and Function
 ```mcfunction
