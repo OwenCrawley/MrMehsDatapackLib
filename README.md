@@ -55,7 +55,9 @@ function mrlib:entity/damage with storage mrlib:storage damage
 ```
 * You can use any score and any storage
 * If you choose to use your own storage it must be structured as such:
-```mcfunction{PATH:{damage:DAMAGE_AMOUNT,damageType:"DAMAGE_TYPE"}}```
+```mcfunction
+{PATH:{damage:DAMAGE_AMOUNT,damageType:"DAMAGE_TYPE"}}
+```
 
 ### Non Solid Block Tag and Function
 ```mcfunction
