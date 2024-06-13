@@ -10,7 +10,7 @@ function mrlib:player/inventory/swap_hands
 
 ### Modifying a Held Item without giving the player a new item
 ```mcfunction
-data merge storage mrlib:storage  {item:{tag:{display:{Name:'{"text":"New Item Name"}'}}}}
+data merge storage mrlib:storage {item:{components:{"minecraft:custom_name":'{"text":"New Item Name"}'}}}
 function mrlib:player/inventory/modify_mainhand
 ```
 * There is a function for modifying offhand
