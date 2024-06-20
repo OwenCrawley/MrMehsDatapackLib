@@ -42,7 +42,7 @@ function mrlib:entity/launch/xyz
 ```
 * strength of 1000 launches the entity roughly ~3 blocks or so
 * Does not work on players
-### Macro Damage (damage from scoreboard)
+### Macro Damage (damage from nbt)
 ```mcfunction
 function mrlib:entity/damage {"damage":DAMAGE_AMOUNT,damageType:"DAMAGE_TYPE"}
 ```
