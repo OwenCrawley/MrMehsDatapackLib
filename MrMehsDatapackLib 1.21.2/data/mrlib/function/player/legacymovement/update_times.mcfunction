@@ -1,0 +1,3 @@
+function mrlib:player/legacymovement/update_sprint_time
+function mrlib:player/legacymovement/update_walk_time
+function mrlib:player/legacymovement/update_fly_time

@@ -1,0 +1,1 @@
+execute if block ~-.29 ~ ~-.29 #mrlib:non_solid if block ~-.29 ~1.9 ~-.29 #mrlib:non_solid if block ~.29 ~ ~.29 #mrlib:non_solid if block ~.29 ~1.9 ~.29 #mrlib:non_solid run return 1
