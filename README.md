@@ -40,6 +40,7 @@ scoreboard players set $y_strength mrlib.motion 1000
 scoreboard players set $z_strength mrlib.motion 1000
 function mrlib:entity/launch/xyz
 ```
+NOTE: This does not work on players as player motion can not be changed or modified without workarounds
 * strength of 1000 launches the entity roughly ~3 blocks or so
 * Does not work on players
 ### Macro Damage (damage from nbt)
